@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = Mobile App 001
+title = MathApp1
 
 # (str) Package name
-package.name = mobileapp001
+package.name = mathapp001
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.wiseplat
@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,random,itertools,operator,datetime
+requirements = python3==3.8.10,kivy==2.1.0,random,itertools,operator,datetime,Kivy-Garden,docutils,pypiwin32,pygments,requests,pywin32,idna,certifi,charset-normalizer,urllib3,pytz,setuptools,zope.interface
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -62,10 +62,10 @@ orientation = landscape
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.8.10
 
 # Kivy version to use
-osx.kivy_version = 2.0.0
+osx.kivy_version = 2.1.0
 
 #
 # Android specific
@@ -94,10 +94,10 @@ fullscreen = 0
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 27
+android.api = 32
 
 # (int) Minimum API your APK will support.
-#android.minapi = 21
+android.minapi = 21
 
 # (int) Android SDK version to use
 #android.sdk = 20
@@ -106,7 +106,7 @@ fullscreen = 0
 #android.ndk = 19b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-#android.ndk_api = 21
+android.ndk_api = 21
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
@@ -226,7 +226,7 @@ fullscreen = 0
 #android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
-android.arch = armeabi-v7a
+android.arch = arm64-v8a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
