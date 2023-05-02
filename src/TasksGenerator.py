@@ -1,5 +1,4 @@
 import random
-from itertools import chain
 import operator
 
 OPERATIONS = {"+": operator.add, "-": operator.sub, "*": operator.mul, ":": operator.ifloordiv}
